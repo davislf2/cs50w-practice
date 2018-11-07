@@ -14,19 +14,31 @@
                 margin: 30px;
                 padding: 20px;
                 border: 3px solid blueviolet;
+                color: blueviolet;
             }
             table {
-                text-align: left;
                 border: 2px solid black;
                 border-collapse: collapse;
+                width: 50%;
             }
             th, td {
-                text-align: left;
+                text-align: center;
                 border: 1px solid black;
                 padding: 4px;
             }
             th {
                 background-color: lightgray;
+            }
+            #top {
+                text-align: center;
+                color: red;
+            }
+            #bottom {
+                text-align: right;
+            }
+            .name{
+                font-style: italic;
+                color: blue;
             }
         </style>
     </head>
@@ -34,6 +46,14 @@
         <h1 style="color:red;text-align:center;">Welcome to My Web Page!</h1>
         <h1> This is H1 </h1>
         <p> This is a paragraph </p>
+        <!-- id and class can be anywhere, but id must be unique -->
+        <!-- level: id > class > div -->
+        <div id=top class="name">
+            I have learned <span class="name">HTML</span>
+        </div>
+        <div id=bottom>
+            I have learned <span class="name">CSS</span>
+        </div>
         <table>
             <tr>
                 <th>My Skill</th>
