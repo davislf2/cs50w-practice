@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
+        <title> My Web Page </title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            div {
+                /* font-family: 'Courier New', Courier, monospace; */
+                font-family: Arial, Helvetica, sans-serif; /* It will use Arial, if not, it will use Helvetica, if not, then any sans-serif */
+                font-weight: bold;
+                background-color: cadetblue;
+                width: 300px;
+                height: 200px;
+                margin: 30px;
+                padding: 20px;
+                border: 3px solid blueviolet;
+            }
+            table {
+                text-align: left;
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                text-align: left;
+                border: 1px solid black;
+                padding: 4px;
+            }
+            th {
+                background-color: lightgray;
+            }
+        </style>
     </head>
     <body>
-        Hello, world! workspace to commit
+        <h1 style="color:red;text-align:center;">Welcome to My Web Page!</h1>
+        <h1> This is H1 </h1>
+        <p> This is a paragraph </p>
+        <table>
+            <tr>
+                <th>My Skill</th>
+                <th>My Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Machine Learning</td>
+                <td>Basic</td>
+            </tr>
+        </table>
+        <div>
+                <ul>
+                        <li>One item</li>
+                        <li>Another item</li>
+                </ul>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                </ol>
+        </div>
+        <img src="cat.jpg">
     </body>
 </html>
