@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This is the example module. This module does stuff.
+This is the example module. This module practice some pep9 guides
+Reference:
+https://github.com/mikeckennedy/write-pythonic-code-demos
 """
 __author__ = ["[Davis Hong](https://github.com/davislf2)"]
 __copyright__ = "Copyright 2018, The Boundary of Knowledge Project"
@@ -14,25 +16,24 @@ __status__ = "Prototype"
 __date__ = '13/11/2018'
 
 
-import os
-import sys
-import collections
-from os import chdir, chown
-# from my_module import path
-
-#  Imports should be grouped in the following order:
-#     standard library imports
-#     related third party imports
-#     local application/library specific imports
-# You should put a blank line between each group of imports.
-
 # -------- Ch 1 - PEP 8 ------------------------
-# Author
-# Reference
-# https://github.com/mikeckennedy/write-pythonic-code-demos
 
 # ******** Part 1 - Imports **************************
+# import before from ... import ...
+# modules follow alphabet
+
 import collections
+import os
+import sys
+from os import chdir, chown
+
+
+from foundations import truthiness
+# from my_module import path
+
+# Use absolute name of modules rather than relative path of current project
+# This one doesn't work
+# from . import db_search
 
 
 #  Imports should be grouped in the following order:
@@ -42,6 +43,9 @@ import collections
 #     local application/library specific imports
 #
 # You should put a blank line between each group of imports.
+
+
+truthiness()
 
 # ******** Part 2 - Code Layout **************************
 class AClass:
@@ -110,9 +114,5 @@ text = "This is a string which is longer than 79 characters. This is not encoura
 # legitimate app, those other warnings would be useful but not here.
 s = sys
 o = os
-m = multiprocessing
-z = path
-z = chmod
 z = chown
-m = mean
 c = collections
